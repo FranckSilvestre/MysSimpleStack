@@ -66,7 +66,7 @@ public class MySimpleStackTest extends TestCase {
 	}
 
 	public void testPeekOnNonEmptyStack() throws EmptyStackException {
-		// given a non empty stack
+		// given a stack with one element
 		SimpleStack stack = new MySimpleStack();
 		Item item = new DummyItem();
 		stack.push(item);
@@ -95,7 +95,7 @@ public class MySimpleStackTest extends TestCase {
 	}
 
 	public void testPopOnNonEmptyStack() throws EmptyStackException {
-		// given a non empty stack
+		// given a stack with one element
 		SimpleStack stack = new MySimpleStack();
 		Item item = new DummyItem();
 		stack.push(item);
