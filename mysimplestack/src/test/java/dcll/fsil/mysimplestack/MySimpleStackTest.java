@@ -104,7 +104,7 @@ public class MySimpleStackTest extends TestCase {
 		Item item2 = stack.pop();
 		
 		// then the item returned is the item that was in the stack
-		assertEquals("the item returned must the one added",item, item2);
+		assertEquals("the item returned must be the one added",item, item2);
 
 		// and the stack is empty
 		assertEquals("size must be 0", 0, stack.getSize());
