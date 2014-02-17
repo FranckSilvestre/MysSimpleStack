@@ -1,5 +1,7 @@
 package dcll.fsil.mysimplestack;
 
+import org.mockito.Mockito;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -42,7 +44,7 @@ public class MySimpleStackTest extends TestCase {
 	public void testPushItem() {
 		// given an empty stack and an item
 		SimpleStack stack = new MySimpleStack();
-		Item item = new DummyItem();
+		Item item = Mockito.mock(Item.class);
 
 		// when the item is pushed in the stack
 		stack.push(item);
@@ -68,7 +70,7 @@ public class MySimpleStackTest extends TestCase {
 	public void testPeekOnNonEmptyStack() throws EmptyStackException {
 		// given a stack with one element
 		SimpleStack stack = new MySimpleStack();
-		Item item = new DummyItem();
+		Item item = Mockito.mock(Item.class);
 		stack.push(item);
 
 		// when a peek is performed
@@ -97,7 +99,7 @@ public class MySimpleStackTest extends TestCase {
 	public void testPopOnNonEmptyStack() throws EmptyStackException {
 		// given a stack with one element
 		SimpleStack stack = new MySimpleStack();
-		Item item = new DummyItem();
+		Item item = Mockito.mock(Item.class);;
 		stack.push(item);
 
 		// when a peek is performed
